@@ -80,6 +80,11 @@ button,
 	text-transform: uppercase;
 }
 /* Main page quick links by walleye Flex */
+.clickerstyle {
+	text-decoration: none;
+	color: #69796c;
+	font-size: 20px;
+}
 .flex {
 	display: -ms-flexbox;
 	-ms-flex-wrap: nowrap;
@@ -101,6 +106,7 @@ button,
 	-webkit-align-items: stretch;
 	-ms-align-items: stretch;
 	align-items: stretch;
+	color: black;
 }
 .flex.flex-3 .flex-item {
 	-ms-flex: 0 1 auto;
@@ -326,6 +332,71 @@ body.is-loading #banner .content {
 /* Footer */
 #footer {
 	padding: 1em;
+	background: #69796c;
+	text-align: center;
+	color: white;
+	font-family: 'Abel', sans-serif;
+	font-size: 16px;
+	letter-spacing: 1px;
+	margin-top: 25px;
+}
+
+
+
+/*License Page */
+img {
+	max-height: 100%;
+	max-width: 100%;
+	object-fit: contain;
+}
+.fish {
+	width: 25%;
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+	margin-top: -3px;
+}
+.dnrheader {
+	color: #69796c;
+	margin: 100px 0px 0px 0px;
+	font-family: 'Abel', sans-serif;
+	font-size: 45px;
+	text-align: center;
+	padding: 30px 10px 10px 10px;
+}
+.dnrsubheader {
+	color: #69796c;
+	font-family: 'Abel', sans-serif;
+	font-size: 30px;
+	text-align: center;
+}
+#content {
+    font-size: 2em;
+    width: 100%; 
+    max-width: 960px;
+    text-align: left;
+    margin: 0px auto; 
+	padding: 20px; 
+}
+.dnrcities {   
+    -moz-column-width: 250px; 
+    -webkit-column-width: 250px; 
+	column-width: 250px;
+	margin-top: -50px;
+	text-align: center;
+}
+.dnrcities ul {
+    margin: 0;
+    padding: 0;
+	list-style-type: none;
+}
+.city {
+	text-decoration: none;
+	color: black;
+}
+#footer-license {
+	margin-top: 25px;
+	padding: 2em;
 	background: #69796c;
 	text-align: center;
 	color: white;
