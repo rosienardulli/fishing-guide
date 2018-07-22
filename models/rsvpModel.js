@@ -6,6 +6,6 @@ module.exports = function(sequelize, DataTypes) {
       hikerEmail: DataTypes.STRING
     });
   
-    return Hiker;
+    return Fish;
   };
   
