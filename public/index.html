@@ -4,11 +4,13 @@
 		<title>Midwest Fishing Guide And Forum</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="css/main.css" />
-        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+		<link rel="stylesheet" href="./css/main.css" />
+		<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+		<script src="login.js"></script>
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.scrolly.min.js"></script>
-        <script src="js/skel.min.js"></script>
+		<script src="js/skel.min.js"></script>
+
     </head>
 	<body>
 
@@ -18,9 +20,16 @@
 					<a href="#menu"><span>Menu</span></a>
 				</nav>
 				<a href="index.html" class="logo">Midwest Fishing Guide And Forum</a>
-				<nav class="right">
-					<a href="#" class="button alt">Log in</a>
+		<!-- Login and signup Page-->
+				<div class="logincontainer"><nav class="right">
+					<div class="loginsignup">
+				    <a href="login.html" class="loginsignuptoo">LOG IN</a>
+					</div> 
+					</div>
 				</nav>
+			</div>
+
+		
 			</header>
 
 		<!-- Menu -->
@@ -33,9 +42,10 @@
 					<li><a href="licenses.html">Licenses</a></li>
 					<li><a href="weather.html">Weather</a></li>
 				</ul>
+
 				<ul class="actions vertical">
-					<li><a href="#" class="button fit">Login</a></li>
-				</ul>
+						<li><a href="#" class="button fit">Login</a></li>
+					</ul>
 			</nav>
 
 		<!-- Banner -->
@@ -66,7 +76,7 @@
 						
 					</div>
 					<div class="flex-item image fit round">
-						<img src="/Users/rosienardulli/Desktop/Walleye_Male_Sander_vitreus_3-2017.jpg" alt="" />
+						<img src="./images/Walleye_Male_Sander_vitreus_3-2017.jpg" alt="" />
 					</div> 
 					<div class="flex-item right">
 						<div>
@@ -89,7 +99,9 @@
 				</div>
 			</footer>
 
-        <!-- Scripts -->
+		<!-- Scripts -->
+		<script src="firebase.js"></script>
+		<script src="login.js"></script>
         <script src="js/util.js"></script>
         <script src="js/main.js"></script>
          <!--   <script async defer 

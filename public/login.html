@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Midwest Fishing Guide And Forum</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/main.css" />
+        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.scrolly.min.js"></script>
+        <script src="js/skel.min.js"></script>
+    </head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<nav class="left">
+					<a href="#menu"><span>Menu</span></a>
+				</nav>
+				<a href="index.html" class="logo">Midwest Fishing Guide And Forum</a>
+			</header>
+
+		<!-- Menu -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="lakes.html">Explore Lakes</a></li>
+					<li><a href="journal.html">Fishing Journal</a></li>
+					<li><a href="community.html">Community</a></li>
+					<li><a href="information.html">Fish Information</a></li>
+					<li><a href="weather.html">Weather</a></li>
+				</ul>
+			</nav>
+
+		<!-- One -->
+				<div class="dnrheader">Log In</div>
+				<div class="dnrsubheader">Log in and start fishin'</div> 
+
+		<!-- Two -->
+		<div class="fish">
+				<img src="./images/Walleye_Male_Sander_vitreus_3-2017.jpg" alt="" />
+			</div> 
+
+      <!-- Login Panel-->
+      <div class= "container-login">
+              <div class="form-group">
+                <label for="name-input">Email:</label>
+                <input class="form-control" id="email-input" type="text">
+              </div>
+              <div class="form-group">
+                <label for="password-input">Password:</label>
+                <input class="form-control" id="password-input" type="password">
+              </div>
+              <button class="loginin-button" id="add-user" type="submit">Log In</button>
+             </div>
+        </div>
+      </div>
+
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+  <!-- LINK TO FIREBASE GOES HERE -->
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+
+  <!-- Script -->
+
+
+
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBfnzpgOOUghT84m2CidzLVGxQ7-SF6HmA",
+        authDomain: "fishing-guide-fb43f.firebaseapp.com",
+        databaseURL: "https://fishing-guide-fb43f.firebaseio.com",
+        projectId: "fishing-guide-fb43f",
+        storageBucket: "fishing-guide-fb43f.appspot.com",
+        messagingSenderId: "395721105795"
+      };
+      firebase.initializeApp(config);
+
+
+
+    // Create a variable to reference the database
+    var database = firebase.database();
+
+    // Initial Values
+    var email = "";
+    var password = "";
+
+    // Capture Button Click
+    $("#add-user").on("click", function() {
+      // Don't refresh the page!
+      event.preventDefault();
+
+      // YOUR TASK!!!
+      // Code in the logic for storing and retrieving the most recent user.
+      // Don't forget to provide initial data to your Firebase database.
+      email = $("#email-input").val().trim();
+      password = $("#password-input").val().trim();
+
+      database.ref().set({
+        email: email,
+        password: password,
+      });
+
+    });
+
+    // Firebase watcher + initial loader HINT: .on("value")
+    database.ref().on("value", function(snapshot) {
+
+      // Log everything that's coming out of snapshot
+      console.log(snapshot.val());
+      console.log(snapshot.val().email);
+      console.log(snapshot.val().password);
+
+      // Change the HTML to reflect
+      $("#email-display").text(snapshot.val().email);
+      $("#password-display").text(snapshot.val().password);
+
+      // Handle the errors
+    }, function(errorObject) {
+      console.log("Errors handled: " + errorObject.code);
+    });
+
+    
+  </script>
+		<!-- Footer -->
+        <footer id="footer">
+                <p>Copyright © 2018 Midwest Fishing Guide And Forum</p>
+            </ul>
+        </div>
+    </footer>
+
+<!-- Scripts -->
+<script src="js/util.js"></script>
+<script src="js/main.js"></script>
+ <!--   <script async defer 
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlJyxmuoUkTYqiOo5Kqf68m1oESPjssTk&callback=initMap">
+</script> -->
+</body>
+</html>

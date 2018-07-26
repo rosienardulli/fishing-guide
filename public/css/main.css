@@ -79,6 +79,7 @@ button,
 	white-space: nowrap;
 	text-transform: uppercase;
 }
+
 /* Main page quick links by walleye Flex */
 .clickerstyle {
 	text-decoration: none;
@@ -276,7 +277,7 @@ body {
 /* Banner */
 #banner {
 	padding: 14em 0 12em 0;
-	background-image: url(/Users/rosienardulli/Desktop/fishingbanner.jpg);
+	background-image: url(./../images/fishingbanner.jpg);
 	background-size: cover;
 	background-position: center top;
 	background-repeat: no-repeat;
@@ -527,7 +528,7 @@ span {
 .containerweather {
 	max-width: 500px;
 	height: 60vh;
-	border: 3px solid #69796c;;
+	border: 3px solid #69796c;
 	margin: -5px auto;
 	display: grid;
 	grid-template-rows: 20% 80%;
@@ -535,11 +536,53 @@ span {
 	padding: 25px 5px;
 	color: #69796c;
 	font-family: 'Abel', 'sans-serif';
-	margin-bottom: 50px;
+	margin-bottom: 0px;
 }
 .degrees {
 	display: grid;
 	grid-template-columns: auto auto;
 	justify-content: center;
 	margin-left: 2rem;
+}
+
+
+/* Login signup button */
+.loginsignuptoo {
+	color: white;
+	font-family: 'Abel', sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	border: solid white;
+	border-radius: 4px;
+	padding: 10px 20px 10px 20px;
+}
+.form-group {
+	color: #69796c;
+	font-size: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	align-items: center;
+
+}
+.loginin-button {
+	color: white;
+	background-color: #69796c;
+	border-radius: 4px;
+	padding: 10px 20px 10px 20px;
+	width: 280px;
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+.container-login {
+	width: 280px;
+	margin: auto;
+}
+#email-input {
+	color: #69796c;
+	width: 200px;
+}
+#password-input {
+	color: #69796c;
+	width: 150px;
 }
