@@ -586,3 +586,8 @@ span {
 	color: #69796c;
 	width: 150px;
 }
+
+#map {
+	width: 100%;
+	height: 400px;
+}
