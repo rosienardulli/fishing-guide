@@ -185,7 +185,9 @@ button,
 	font-family: 'Abel', sans-serif;
 }
 #header nav a[href="#menu"]:before {
-	content: "";
+	content: "⌸";
+	font-size: 60px;
+	color: white;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	font-family: 'Abel', sans-serif;
@@ -264,7 +266,9 @@ body {
 	width: 7em;
 }
 #menu .close:before {
-	content: "";
+	content: "✕";
+	font-size: 30px;
+	color:white;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 }
@@ -388,7 +392,7 @@ img {
     -webkit-column-width: 250px; 
 	column-width: 250px;
 	text-align: center;
-	margin-bottom: 70px;
+	margin-bottom: 0px;
 }
 .dnrcities ul {
     margin: 0;
@@ -592,14 +596,86 @@ span {
 }
 
 #map {
-	width: 50%;
-	height: 300px;
+	width: 70%;
+	height: 400px;
 	margin: auto;
 	border-radius: 5px;
-    border: 4px solid #69796c;
+	border: 4px solid #69796c;
+	margin-bottom: 30px;
 }
-
+#pac-input {
+	color: #69796c;
+}
+#place-address {
+	font-size: 12px;
+	color: #69796c;
+	font-family: 'Abel', 'sans-serif';
+}
+#place-name {
+	font-size: 16px;
+	color: #69796c;
+	font-family: 'Abel', 'sans-serif';
+}
+#place-id {
+	font-size: 12px;
+	color: #69796c;
+	font-family: 'Abel', 'sans-serif';
+}
+.controls {
+	background-color: #fff;
+	border-radius: 2px;
+	border: 1px solid transparent;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+	box-sizing: border-box;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 300;
+	height: 29px;
+	margin-left: 17px;
+	margin-top: 10px;
+	outline: none;
+	padding: 0 11px 0 13px;
+	text-overflow: ellipsis;
+	width: 400px;
+  }
+  .controls:focus {
+	border-color: #4d90fe;
+  }
+  .title {
+	font-weight: bold;
+  }
+  #infowindow-content {
+	display: none;
+  }
+  #map #infowindow-content {
+	display: inline;
+  }
 .ombrecontainer {
 	background: linear-gradient(to bottom, #69796c 0%, white 100%);
 	margin-top: -4px;
+}
+
+.savelakes {
+	color: #69796c;
+	font-family: 'Abel', 'sans-serif';
+	font-size: 35px;
+}
+.favoritelake {
+	color: #69796c;
+	font-family: 'Abel', 'sans-serif';
+	font-size: 25px;
+}
+.favoritecontainer {
+	margin: auto;
+	text-align: center;
+	max-width: 900px;
+	border: 4px solid #69796c;
+	padding: 25px;
+    width: 50%;
+	}
+#lakeName {
+	font-size: 25px;
+	font-family: 'Abel', 'sans-serif';
+	margin-top: 15px;
+	margin-right: 10px;
 }

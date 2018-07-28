@@ -6,7 +6,7 @@ var guestMessages = {
     msgs: [],
 
     getMessages: function(msg){
-        this.msgs.push("User: " + value + new Date + "<br />");
+        this.msgs.push("User: " + value + new Date + " ");
     },
 
     printMessages: function(){
