@@ -74,10 +74,11 @@ button,
 	font-weight: bold;
 	padding: 14px 25px 14px 25px;
 	text-align: center;
-	margin-left: 12px;
 	text-decoration: none;
-	white-space: nowrap;
 	text-transform: uppercase;
+	letter-spacing: 2px;
+	border: #69796c;
+	margin: auto;
 }
 
 /* Main page quick links by walleye Flex */
@@ -355,7 +356,8 @@ img {
 	display: block;
     margin-left: auto;
 	margin-right: auto;
-	margin-top: -3px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 .dnrheader {
 	color: #69796c;
@@ -364,6 +366,8 @@ img {
 	font-size: 45px;
 	text-align: center;
 	padding: 30px 10px 10px 10px;
+	text-shadow: 1px 1px white;
+	font-weight: bold;
 }
 .dnrsubheader {
 	color: #69796c;
@@ -383,8 +387,8 @@ img {
     -moz-column-width: 250px; 
     -webkit-column-width: 250px; 
 	column-width: 250px;
-	margin-top: -50px;
 	text-align: center;
+	margin-bottom: 70px;
 }
 .dnrcities ul {
     margin: 0;
@@ -415,7 +419,7 @@ img {
 	font-family: 'Abel', sans-serif;
 	font-size: 40px;
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 65px;
 }
 #journal {
 	background: #FFF;
@@ -453,7 +457,6 @@ textarea{
 .comments{
 	margin-left: 20%;
 	margin-right: 20%;
-	margin-top: -3%;
 	text-align: center;
 }
 #submit{
@@ -472,6 +475,7 @@ textarea{
 	margin: 0 auto;
 	text-align: center;
 	width: 100%;
+	margin-top: -20px;
 }
 #entries > ul{
 	text-decoration: none;
@@ -572,7 +576,7 @@ span {
 	width: 280px;
 	margin: auto;
 	margin-top: 15px;
-	margin-bottom: 30px;
+	margin-bottom: 90px;
 }
 .container-login {
 	width: 280px;
@@ -592,5 +596,10 @@ span {
 	height: 300px;
 	margin: auto;
 	border-radius: 5px;
+    border: 4px solid #69796c;
+}
 
+.ombrecontainer {
+	background: linear-gradient(to bottom, #69796c 0%, white 100%);
+	margin-top: -4px;
 }

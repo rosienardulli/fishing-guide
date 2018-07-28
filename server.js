@@ -1,5 +1,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
+var app = express();
+
 
 // Sets up the Express App
 // =============================================================
@@ -22,7 +24,7 @@ app.use(express.static("public"));
 // Routes
 // =============================================================
 
-require("./routes/html-routes")(app);
+//require("./routes/html-routes")(app);
 
 
 // Syncing our sequelize models and then starting our Express app
@@ -32,3 +34,4 @@ require("./routes/html-routes")(app);
     console.log("App listening on PORT " + PORT);
   });
 //});
+
